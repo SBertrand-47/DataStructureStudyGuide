@@ -1,0 +1,566 @@
+<html>
+    <head>
+      <title>Data Structures Study Plan - 14 days</title>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+      <style>
+       h1{
+        text-align: Center;
+       
+       }
+       body{
+        background-color: #ECEFF1;
+       }
+
+      </style>
+      <script>
+        $(document).ready(function() {
+          // Define a dueDate variable that sets the current date to a month from now.
+           // Create a progress bar and set the completion to 0
+        let progress = 0;
+          let progressBar = `
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: ${progress}%" aria-valuenow="${progress}" aria-valuemin="0" aria-valuemax="100">${progress}%</div>
+          </div>
+          `;
+    
+          $('#day1-completed').click(function() {
+            if ($(this).prop('checked')) {
+              $(this).closest('li').css('text-decoration', 'line-through');
+              anime({
+                targets: '.list-group',
+                delay: 0,
+                duration: 1000,
+                rotate: [
+                  { value: '1turn', duration: 1000, easing: 'easeInOutSine' }
+                ],
+                backgroundColor: '#ffcccc',
+              });
+              // Increment the progress bar
+              progress += 7;
+              progressBar = `
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: ${progress}%" aria-valuenow="${progress}" aria-valuemin="0" aria-valuemax="100">${progress}%</div>
+              </div>
+              `;
+              $('#progress-bar').html(progressBar);
+            } else {
+              $(this).closest('li').css('text-decoration', 'none');
+            }
+          });
+
+          // Add click event for the other days
+          $('#day2-completed').click(function() {
+            if ($(this).prop('checked')) {
+              $(this).closest('li').css('text-decoration', 'line-through');
+              anime({
+                targets: '.list-group',
+                delay: 0,
+                duration: 1000,
+                rotate: [
+                  { value: '1turn', duration: 1000, easing: 'easeInOutSine' }
+                ],
+                backgroundColor: '#ffcccc',
+              });
+              // Increment the progress bar
+              progress += 7;
+              progressBar = `
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: ${progress}%" aria-valuenow="${progress}" aria-valuemin="0" aria-valuemax="100">${progress}%</div>
+              </div>
+              `;
+              $('#progress-bar').html(progressBar);
+            } else {
+              $(this).closest('li').css('text-decoration', 'none');
+            }
+          });
+
+          // Add click event for the other days
+          $('#day3-completed').click(function() {
+            if ($(this).prop('checked')) {
+              $(this).closest('li').css('text-decoration', 'line-through');
+              anime({
+                targets: '.list-group',
+                delay: 0,
+                duration: 1000,
+                rotate: [
+                  { value: '1turn', duration: 1000, easing: 'easeInOutSine' }
+                ],
+                backgroundColor: '#ffcccc',
+              });
+              // Increment the progress bar
+              progress += 7;
+              progressBar = `
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: ${progress}%" aria-valuenow="${progress}" aria-valuemin="0" aria-valuemax="100">${progress}%</div>
+              </div>
+              `;
+              $('#progress-bar').html(progressBar);
+            } else {
+              $(this).closest('li').css('text-decoration', 'none');
+            }
+          });
+
+          // Add click event for the other days
+          $('#day4-completed').click(function() {
+            if ($(this).prop('checked')) {
+              $(this).closest('li').css('text-decoration', 'line-through');
+              anime({
+                targets: '.list-group',
+                delay: 0,
+                duration: 1000,
+                rotate: [
+                  { value: '1turn', duration: 1000, easing: 'easeInOutSine' }
+                ],
+                backgroundColor: '#ffcccc',
+              });
+              // Increment the progress bar
+              progress += 7;
+              progressBar = `
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: ${progress}%" aria-valuenow="${progress}" aria-valuemin="0" aria-valuemax="100">${progress}%</div>
+              </div>
+              `;
+              $('#progress-bar').html(progressBar);
+            } else {
+              $(this).closest('li').css('text-decoration', 'none');
+            }
+          });
+
+          // Add click event for the other days
+          $('#day5-completed').click(function() {
+            if ($(this).prop('checked')) {
+              $(this).closest('li').css('text-decoration', 'line-through');
+              anime({
+                targets: '.list-group',
+                delay: 0,
+                duration: 1000,
+                rotate: [
+                  { value: '1turn', duration: 1000, easing: 'easeInOutSine' }
+                ],
+                backgroundColor: '#ffcccc',
+              });
+              // Increment the progress bar
+              progress += 7;
+              progressBar = `
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: ${progress}%" aria-valuenow="${progress}" aria-valuemin="0" aria-valuemax="100">${progress}%</div>
+              </div>
+              `;
+              $('#progress-bar').html(progressBar);
+            } else {
+              $(this).closest('li').css('text-decoration', 'none');
+            }
+          });
+
+          // Add click event for the other days
+          $('#day6-completed').click(function() {
+            if ($(this).prop('checked')) {
+              $(this).closest('li').css('text-decoration', 'line-through');
+              anime({
+                targets: '.list-group',
+                delay: 0,
+                duration: 1000,
+                rotate: [
+                  { value: '1turn', duration: 1000, easing: 'easeInOutSine' }
+                ],
+                backgroundColor: '#ffcccc',
+              });
+              // Increment the progress bar
+              progress += 7;
+              progressBar = `
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: ${progress}%" aria-valuenow="${progress}" aria-valuemin="0" aria-valuemax="100">${progress}%</div>
+              </div>
+              `;
+              $('#progress-bar').html(progressBar);
+            } else {
+              $(this).closest('li').css('text-decoration', 'none');
+            }
+          });
+
+          // Add click event for the other days
+          $('#day7-completed').click(function() {
+            if ($(this).prop('checked')) {
+              $(this).closest('li').css('text-decoration', 'line-through');
+              anime({
+                targets: '.list-group',
+                delay: 0,
+                duration: 1000,
+                rotate: [
+                  { value: '1turn', duration: 1000, easing: 'easeInOutSine' }
+                ],
+                backgroundColor: '#ffcccc',
+              });
+              // Increment the progress bar
+              progress += 7;
+              progressBar = `
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: ${progress}%" aria-valuenow="${progress}" aria-valuemin="0" aria-valuemax="100">${progress}%</div>
+              </div>
+              `;
+              $('#progress-bar').html(progressBar);
+            } else {
+              $(this).closest('li').css('text-decoration', 'none');
+            }
+          });
+
+          // Add click event for the other days
+          $('#day8-completed').click(function() {
+            if ($(this).prop('checked')) {
+              $(this).closest('li').css('text-decoration', 'line-through');
+              anime({
+                targets: '.list-group',
+                delay: 0,
+                duration: 1000,
+                rotate: [
+                  { value: '1turn', duration: 1000, easing: 'easeInOutSine' }
+                ],
+                backgroundColor: '#ffcccc',
+              });
+              // Increment the progress bar
+              progress += 7;
+              progressBar = `
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: ${progress}%" aria-valuenow="${progress}" aria-valuemin="0" aria-valuemax="100">${progress}%</div>
+              </div>
+              `;
+              $('#progress-bar').html(progressBar);
+            } else {
+              $(this).closest('li').css('text-decoration', 'none');
+            }
+          });
+
+          // Add click event for the other days
+          $('#day9-completed').click(function() {
+            if ($(this).prop('checked')) {
+              $(this).closest('li').css('text-decoration', 'line-through');
+              anime({
+                targets: '.list-group',
+                delay: 0,
+                duration: 1000,
+                rotate: [
+                  { value: '1turn', duration: 1000, easing: 'easeInOutSine' }
+                ],
+                backgroundColor: '#ffcccc',
+              });
+              // Increment the progress bar
+              progress += 7;
+              progressBar = `
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: ${progress}%" aria-valuenow="${progress}" aria-valuemin="0" aria-valuemax="100">${progress}%</div>
+              </div>
+              `;
+              $('#progress-bar').html(progressBar);
+            } else {
+              $(this).closest('li').css('text-decoration', 'none');
+            }
+          });
+
+          //10 day
+
+          $('#day10-completed').click(function() {
+            if ($(this).prop('checked')) {
+              $(this).closest('li').css('text-decoration', 'line-through');
+              anime({
+                targets: '.list-group',
+                delay: 0,
+                duration: 1000,
+                rotate: [
+                  { value: '1turn', duration: 1000, easing: 'easeInOutSine' }
+                ],
+                backgroundColor: '#ffcccc',
+              });
+              // Increment the progress bar
+              progress += 7;
+              progressBar = `
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: ${progress}%" aria-valuenow="${progress}" aria-valuemin="0" aria-valuemax="100">${progress}%</div>
+              </div>
+              `;
+              $('#progress-bar').html(progressBar);
+            } else {
+              $(this).closest('li').css('text-decoration', 'none');
+            }
+          });
+
+          //12
+
+          $('#day11-completed').click(function() {
+            if ($(this).prop('checked')) {
+              $(this).closest('li').css('text-decoration', 'line-through');
+              anime({
+                targets: '.list-group',
+                delay: 0,
+                duration: 1000,
+                rotate: [
+                  { value: '1turn', duration: 1000, easing: 'easeInOutSine' }
+                ],
+                backgroundColor: '#ffcccc',
+              });
+              // Increment the progress bar
+              progress += 7;
+              progressBar = `
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: ${progress}%" aria-valuenow="${progress}" aria-valuemin="0" aria-valuemax="100">${progress}%</div>
+              </div>
+              `;
+              $('#progress-bar').html(progressBar);
+            } else {
+              $(this).closest('li').css('text-decoration', 'none');
+            }
+          });
+          // 13
+          $('#day12-completed').click(function() {
+            if ($(this).prop('checked')) {
+              $(this).closest('li').css('text-decoration', 'line-through');
+              anime({
+                targets: '.list-group',
+                delay: 0,
+                duration: 1000,
+                rotate: [
+                  { value: '1turn', duration: 1000, easing: 'easeInOutSine' }
+                ],
+                backgroundColor: '#ffcccc',
+              });
+              // Increment the progress bar
+              progress += 7;
+              progressBar = `
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: ${progress}%" aria-valuenow="${progress}" aria-valuemin="0" aria-valuemax="100">${progress}%</div>
+              </div>
+              `;
+              $('#progress-bar').html(progressBar);
+            } else {
+              $(this).closest('li').css('text-decoration', 'none');
+            }
+          });
+          // 14
+          $('#day13-completed').click(function() {
+            if ($(this).prop('checked')) {
+              $(this).closest('li').css('text-decoration', 'line-through');
+              anime({
+                targets: '.list-group',
+                delay: 0,
+                duration: 1000,
+                rotate: [
+                  { value: '1turn', duration: 1000, easing: 'easeInOutSine' }
+                ],
+                backgroundColor: '#ffcccc',
+              });
+              // Increment the progress bar
+              progress += 7;
+              progressBar = `
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: ${progress}%" aria-valuenow="${progress}" aria-valuemin="0" aria-valuemax="100">${progress}%</div>
+              </div>
+              `;
+              $('#progress-bar').html(progressBar);
+            } else {
+              $(this).closest('li').css('text-decoration', 'none');
+            }
+          });
+          //14
+          $('#day14-completed').click(function() {
+            if ($(this).prop('checked')) {
+              $(this).closest('li').css('text-decoration', 'line-through');
+              anime({
+                targets: '.list-group',
+                delay: 0,
+                duration: 1000,
+                rotate: [
+                  { value: '1turn', duration: 1000, easing: 'easeInOutSine' }
+                ],
+                backgroundColor: '#ffcccc',
+              });
+              // Increment the progress bar
+              progress += 7;
+              progressBar = `
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: ${progress}%" aria-valuenow="${progress}" aria-valuemin="0" aria-valuemax="100">${progress}%</div>
+              </div>
+              `;
+              $('#progress-bar').html(progressBar);
+            } else {
+              $(this).closest('li').css('text-decoration', 'none');
+            }
+          });
+    
+        });
+      </script>
+    </head>
+<body>
+  <h1>Data Structures and Algorithms Study Plan - 14 days</h1>
+  <div class="container">
+    <label class="switch">
+      <input type="checkbox" id="mode-switch" />
+      <span class="slider"></span>
+    </label>
+    <div id="progress-bar">
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+      </div>
+    </div>
+    <ul class="list-group">
+      <li class="list-group-item list-group-item-primary">
+        <h5>Day 1: Read through the basics of data structures and algorithms: <span class="badge badge-secondary">3 hours</span>
+        <ul>
+          <li><a href="https://www.geeksforgeeks.org/data-structures/" target="_blank">GeeksforGeeks</a></li>
+          <li><a href="https://www.hackerearth.com/practice/algorithms/" target="_blank">HackerEarth</a></li>
+        </ul>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="day1-completed" />
+          <label class="form-check-label" for="day1-completed">Mark as completed</label>
+        </div>
+      </li>
+      <li class="list-group-item list-group-item-primary">
+        <h5>Day 2: Implement basic data structures in Python: <span class="badge badge-secondary">5 hours</span></h5>
+        <ul>
+          <li><a href="https://www.geeksforgeeks.org/python-data-structure-tutorials/" target="_blank">GeeksforGeeks</a></li>
+          <li><a href="https://www.programiz.com/python-programming/data-structures" target="_blank">Programiz</a></li>
+        </ul>
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="day2-completed" />
+            <label class="form-check-label" for="day1-completed">Mark as completed</label>
+        </div>
+      </li>
+      <li class="list-group-item list-group-item-primary">
+        <h5>Day 3: Understand and practice searching algorithms: <span class="badge badge-secondary">2 hours</span></h5>
+        <ul>
+          <li><a href="https://www.geeksforgeeks.org/searching-algorithms/" target="_blank">GeeksforGeeks</a></li>
+          <li><a href="https://www.hackerearth.com/practice/algorithms/searching/linear-search/tutorial/" target="_blank">HackerEarth</a></li>
+        </ul>
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="day3-completed" />
+            <label class="form-check-label" for="day1-completed">Mark as completed</label>
+          </div>
+      </li>
+      <li class="list-group-item list-group-item-primary">
+        <h5>Day 4: Understand and practice sorting algorithms: <span class="badge badge-secondary">2 hours</span></h5>
+        <ul>
+          <li><a href="https://www.geeksforgeeks.org/sorting-algorithms/" target="_blank">GeeksforGeeks</a></li>
+          <li><a href="https://www.hackerearth.com/practice/algorithms/sorting/bubble-sort/tutorial/" target="_blank">HackerEarth</a></li>
+        </ul>
+<div class="form-check">
+          <input type="checkbox" class="form-check-input" id="day4-completed" />
+          <label class="form-check-label" for="day1-completed">Mark as completed</label>
+        </div>
+      </li>
+      <li class="list-group-item list-group-item-primary">
+        <h5>Day 5: Understand and practice linked lists: <span class="badge badge-secondary">3 hours</span></h5>
+        <ul>
+          <li><a href="https://www.geeksforgeeks.org/data-structures/linked-list/" target="_blank">GeeksforGeeks</a></li>
+          <li><a href="https://www.programiz.com/dsa/linked-list" target="_blank">Programiz</a></li>
+        </ul>
+<div class="form-check">
+          <input type="checkbox" class="form-check-input" id="day5-completed" />
+          <label class="form-check-label" for="day5-completed">Mark as completed</label>
+        </div>
+      </li>
+      <li class="list-group-item list-group-item-primary">
+        <h5>Day 6: Understand and practice stacks and queues: <span class="badge badge-secondary">3 hours</span></h5>
+        <ul>
+          <li><a href="https://www.geeksforgeeks.org/data-structures/stack-queue/" target="_blank">GeeksforGeeks</a></li>
+          <li><a href="https://www.programiz.com/dsa/stack-queue" target="_blank">Programiz</a></li>
+        </ul>
+<div class="form-check">
+          <input type="checkbox" class="form-check-input" id="day6-completed" />
+          <label class="form-check-label" for="day6-completed">Mark as completed</label>
+        </div>
+      </li>
+      <li class="list-group-item list-group-item-primary">
+        <h5>Day 7: Understand and practice trees: <span class="badge badge-secondary">3 hours</span></h5>
+        <ul>
+          <li><a href="https://www.geeksforgeeks.org/data-structures/tree/" target="_blank">GeeksforGeeks</a></li>
+          <li><a href="https://www.programiz.com/dsa/tree" target="_blank">Programiz</a></li>
+        </ul>
+<div class="form-check">
+          <input type="checkbox" class="form-check-input" id="day7-completed" />
+          <label class="form-check-label" for="day7-completed">Mark as completed</label>
+        </div>
+      </li>
+      <li class="list-group-item list-group-item-primary">
+        <h5>Day 8: Understand and practice binary search trees: <span class="badge badge-secondary">3 hours</span></h5>
+        <ul>
+          <li><a href="https://www.geeksforgeeks.org/binary-search-tree/" target="_blank">GeeksforGeeks</a></li>
+          <li><a href="https://www.programiz.com/dsa/bst" target="_blank">Programiz</a></li>
+        </ul>
+<div class="form-check">
+          <input type="checkbox" class="form-check-input" id="day8-completed" />
+          <label class="form-check-label" for="day8-completed">Mark as completed</label>
+        </div>
+      </li>
+      <li class="list-group-item list-group-item-primary">
+        <h5>Day 9: Understand and practice hash tables: <span class="badge badge-secondary">2 hours</span></h5>
+        <ul>
+          <li><a href="https://www.geeksforgeeks.org/hashing-set-1-introduction/" target="_blank">GeeksforGeeks</a></li>
+          <li><a href="https://www.programiz.com/dsa/hash-table" target="_blank">Programiz</a></li>
+        </ul>
+<div class="form-check">
+          <input type="checkbox" class="form-check-input" id="day9-completed" />
+          <label class="form-check-label" for="day9-completed">Mark as completed</label>
+        </div>
+      </li>
+      <li class="list-group-item list-group-item-primary">
+        <h5>Day 10: Understand and practice heaps: <span class="badge badge-secondary">2 hours</span></h5>
+        <ul>
+          <li><a href="https://www.geeksforgeeks.org/heap-data-structure/" target="_blank">GeeksforGeeks</a></li>
+          <li><a href="https://www.programiz.com/dsa/heap" target="_blank">Programiz</a></li>
+        </ul>
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="day10-completed" />
+            <label class="form-check-label" for="day10-completed">Mark as completed</label>
+          </div>
+      </li>
+      <li class="list-group-item list-group-item-primary">
+        <h5>Day 11: Understand and practice dynamic programming: <span class="badge badge-secondary">3 hours</span></h5>
+        <ul>
+          <li><a href="https://www.geeksforgeeks.org/dynamic-programming/" target="_blank">GeeksforGeeks</a></li>
+          <li><a href="https://www.hackerearth.com/practice/algorithms/dynamic-programming/introduction-to-dynamic-programming-1/tutorial/" target="_blank">HackerEarth</a></li>
+        </ul>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="day11-completed" />
+          <label class="form-check-label" for="day11-completed">Mark as completed</label>
+        </div>
+      </li>
+      <li class="list-group-item list-group-item-primary">
+        <h5>Day 12: Understand and practice graph algorithms: <span class="badge badge-secondary">3 hours</span></h5>
+        <ul>
+          <li><a href="https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/" target="_blank">GeeksforGeeks</a></li>
+          <li><a href="https://www.hackerearth.com/practice/algorithms/graphs/graph-representation/tutorial/" target="_blank">HackerEarth</a></li>
+        </ul>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="day12-completed" />
+          <label class="form-check-label" for="day12-completed">Mark as completed</label>
+        </div>
+      </li>
+      <li class="list-group-item list-group-item-primary">
+        <h5>Day 13: Read up on advanced topics: <span class="badge badge-secondary">2 hours</span></h5>
+        <ul>
+          <li><a href="https://www.geeksforgeeks.org/advanced-data-structures/" target="_blank">GeeksforGeeks</a></li>
+          <li><a href="https://www.hackerearth.com/practice/data-structures/advanced-data-structures/" target="_blank">HackerEarth</a></li>
+        </ul>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="day13-completed" />
+          <label class="form-check-label" for="day13-completed">Mark as completed</label>
+        </div>
+      </li>
+      <li class="list-group-item list-group-item-primary">
+        <h5>Day 14: Practice problems: <span class="badge badge-secondary">4 hours</span></h5>
+        <ul>
+          <li><a href="https://www.geeksforgeeks.org/data-structure-algorithms-set-1/" target="_blank">GeeksforGeeks</a></li>
+          <li><a href="https://www.hackerearth.com/practice/data-structures/" target="_blank">HackerEarth</a></li>
+        </ul>
+            <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="day14-completed" />
+          <label class="form-check-label" for="day14-completed">Mark as completed</label>
+        </div>
+      </li>
+    </ul>
+  </div>
+</body>
+</html>
